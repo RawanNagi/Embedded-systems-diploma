@@ -5,35 +5,37 @@ int main()
     int n;
     printf ("enter number of elements: ");
     scanf ("%d", &n);
-    int x[n];
+    int x[n+1];
 
-    printf (10);
+    printf ("\n");
     int i;
     for (i = 0; i < n; i++)
     {
         scanf ("%d", &x[i]);
     }
 
-    printf ("\n: \n");
-    for (i = 0; i < r; i++)
+    int element, location;
+    printf ("\nenter the element to be inserted: ");
+    scanf ("%d", &element);
+    printf ("\nenter the location: ");
+    scanf ("%d", &location);
+
+    for (i = n; i >= 0; i--)
     {
-        for (j = 0; j < c; j++)
+        x[i+1] = x[i];
+        if (i == location - 1)
         {
-            printf ("%d\t", x[i][j]);
+            x[i] = element;
+            break;
         }
-        printf ("\n");
     }
 
-    printf ("\nThe transpose of the matrix: \n");
-    for (i = 0; i < c; i++)
+    printf ("\n");
+    for (i = 0; i <= n; i++)
     {
-        int j;
-        for (j = 0; j < r; j++)
-        {
-            printf ("%d\t", x[j][i]);
-        }
-        printf ("\n");
+        printf ("%d ", x[i]);
     }
 
+    printf ("\n");
     return 0;
 }

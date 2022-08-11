@@ -5,7 +5,7 @@ int main()
     int r, c;
     printf ("enter number of rows and columns of the matrix: ");
     scanf ("%d %d", &r, &c);
-    int x[r][c];
+    int x[r][c], t[c][r];
 
     printf ("\nenter elements of the matrix: \n");
     int i, j;
@@ -28,13 +28,20 @@ int main()
         printf ("\n");
     }
 
+    for (i = 0; i < c; i++)
+    {
+        for (j = 0; j < r; j++)
+        {
+            t[i][j] = x[j][i];
+        }
+    }
+
     printf ("\nThe transpose of the matrix: \n");
     for (i = 0; i < c; i++)
     {
-        int j;
         for (j = 0; j < r; j++)
         {
-            printf ("%d\t", x[j][i]);
+            printf ("%d\t", t[i][j]);
         }
         printf ("\n");
     }
