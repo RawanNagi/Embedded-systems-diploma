@@ -7,7 +7,7 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
+      "externalConsole": true,
       "cwd": "e:/learn in depth/GitHub/lecture_3 assignments",
       "program": "e:/learn in depth/GitHub/lecture_3 assignments/build/Debug/outDebug",
       "MIMode": "gdb",
