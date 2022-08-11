@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void main()
 {
@@ -12,7 +12,10 @@ void main()
     a = b;
     b = temp;
 
-    printf("After swapping value of A = %f \n", a);
-    printf("After swapping value of B = %f", b);
+    printf("\nAfter swapping, value of A = %0.2f \n", a);
+    printf("After swapping, value of B = %0.2f", b);
+
+    printf ("\n");
+    return 0;
 }
 

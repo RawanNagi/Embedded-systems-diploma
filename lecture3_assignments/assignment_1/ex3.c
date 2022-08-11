@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void main()
 {
@@ -6,4 +6,7 @@ void main()
     printf("please enter two integers: ");
     scanf("%d %d", &a, &b);
     printf("the sum = %d", a+b);
+
+    printf ("\n");
+    return 0;
 }

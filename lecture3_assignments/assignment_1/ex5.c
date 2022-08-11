@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void main()
 {
@@ -6,4 +6,7 @@ void main()
     printf("please enter a character: ");
     scanf("%c", &x);
     printf("the ASCII value of %c = %d ", x, x);
+
+    printf ("\n");
+    return 0;
 }

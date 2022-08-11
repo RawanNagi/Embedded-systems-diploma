@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void main()
 {
@@ -6,4 +6,7 @@ void main()
     printf("please enter an integer: ");
     scanf("%d", &x);
     printf("you entered: %d", x);
+
+    printf ("\n");
+    return 0;
 }
